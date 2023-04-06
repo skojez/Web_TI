@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.site-header{
+    background-color: lightgray;
+    font-weight: 600;
+}
+.navbar{
+    background-color: white;
+}
+.footer{
+    background-color: #010081;
+}
+
+
