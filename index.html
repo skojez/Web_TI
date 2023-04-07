@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/Frontend/bootstrap-5.3.0-alpha1-dist(1)/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
     <link rel="stylesheet" href="/Style/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
 </head>
 
 <body class ="d-flex flex-column min-vh-100">
@@ -39,32 +41,139 @@
         </div>
       </nav>
     </div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    
+    <div class="contain">
+      <div id="owl-carousel" class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="Asset/Images/Banner.jpg" alt="Banner">
         </div>
-        <div class="carousel-inner shadow ">
-          <div class="carousel-item active">
-            <img src="Asset/Images/Banner.jpg" class="d-block w-100" alt="banner-1">
-          </div>
-          <div class="carousel-item">
-            <img src="Asset/Images/Banner.jpg" class="d-block w-100" alt="banner-2">
-          </div>
-          <div class="carousel-item">
-            <img src="Asset/Images/Banner.jpg" class="d-block w-100" alt="banner-3">
-          </div>
+        <div class="item">
+          <img src="Asset/Images/Banner.jpg" alt="Banner">
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="item">
+          <img src="Asset/Images/Banner.jpg" alt="Banner">
+        </div>
+        <div class="item">
+          <img src="Asset/Images/Banner.jpg" alt="Banner">
+        </div>
+        <div class="item">
+          <img src="Asset/Images/Banner.jpg" alt="Banner">
+        </div>
+      </div>
     </div>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+      <!-- Owl Carousel -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <!-- custom JS code after importing jquery and owl -->
+      <script type="text/javascript">
+          $(document).ready(function() {
+              $(".owl-carousel").owlCarousel();
+          });
+  
+          $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 30,
+            dots: true,
+            items: 1,
+          })
+    </script>
+
+<section class="main">
+  <div class="container">
+    <div class="section-divider">
+      <span>BERITA</span>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-sm-12 p-2">
+            <img src="Asset/Images/Berita.jpg" alt="Berita1">
+          </div>
+          <div class="col-xl-6 col-sm-12">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia minus consectetur hic quo repudiandae delectus deleniti totam. Numquam earum commodi illo qui explicabo doloribus quas vitae necessitatibus inventore odio ea delectus iure, dignissimos, molestiae saepe tempora cupiditate ratione quisquam unde deserunt quam facilis sit. Eius illo quis unde eos quo culpa pariatur voluptate quisquam. Voluptatum, aliquid corporis. Ex omnis dignissimos fugit aspernatur doloremque eos tenetur cum, velit quam dolorem laborum ratione nihil error iste quaerat cumque? Est minus, tenetur perspiciatis dignissimos odio quod? Iusto dolor veritatis enim illo repellat commodi magnam, inventore eum veniam dolorem omnis dolores velit, accusantium cum.</p>
+          </div>
+          <div class="col-xl-6 col-sm-12 p-2">
+            <img src="Asset/Images/Berita2.jpg" alt="Berita1">
+          </div>
+          <div class="col-xl-6 col-sm-12">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maxime nobis sunt possimus consequuntur aperiam quaerat commodi maiores, sapiente ad quos repudiandae natus excepturi, similique deleniti nostrum ratione quae? Numquam temporibus, dolorum suscipit unde minima molestiae quo odit provident eveniet inventore harum. Harum iure officiis laudantium sunt reprehenderit aliquam voluptatibus odit, suscipit veniam rerum asperiores molestias quae consectetur nemo, provident modi eum non corporis voluptatem magnam pariatur in fuga? Est labore laboriosam recusandae, deleniti quidem minus velit praesentium eos iure. Iusto numquam laborum atque architecto, nesciunt minima obcaecati recusandae facere sed, quam officia minus accusamus distinctio iure ex voluptatem alias.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="main">
+  <div class="container">
+    <div class="section-divider">
+      <span>KEGIATAN</span>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-sm-12 p-2">
+            <img src="Asset/Images/EVENT 1.jpg" alt="Berita1">
+          </div>
+          <div class="col-xl-3 col-sm-12">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia minus consectetur hic quo repudiandae delectus deleniti totam. Numquam earum commodi illo qui explicabo doloribus quas vitae necessitatibus inventore odio ea delectus iure, dignissimos, molestiae saepe tempora cupiditate ratione quisquam unde deserunt quam facilis sit. Eius illo quis unde eos quo culpa pariatur voluptate quisquam. Voluptatum, aliquid corporis. Ex omnis dignissimos fugit aspernatur doloremque eos tenetur cum, velit quam dolorem laborum ratione nihil error iste quaerat cumque? Est minus, tenetur perspiciatis dignissimos odio quod? Iusto dolor veritatis enim illo repellat commodi magnam, inventore eum veniam dolorem omnis dolores velit, accusantium cum.</p>
+          </div>
+          <div class="col-xl-3 col-sm-12 p-2">
+            <img src="Asset/Images/EVENT 2.jpg" alt="Berita1">
+          </div>
+          <div class="col-xl-3 col-sm-12">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maxime nobis sunt possimus consequuntur aperiam quaerat commodi maiores, sapiente ad quos repudiandae natus excepturi, similique deleniti nostrum ratione quae? Numquam temporibus, dolorum suscipit unde minima molestiae quo odit provident eveniet inventore harum. Harum iure officiis laudantium sunt reprehenderit aliquam voluptatibus odit, suscipit veniam rerum asperiores molestias quae consectetur nemo, provident modi eum non corporis voluptatem magnam pariatur in fuga? Est labore laboriosam recusandae, deleniti quidem minus velit praesentium eos iure. Iusto numquam laborum atque architecto, nesciunt minima obcaecati recusandae facere sed, quam officia minus accusamus distinctio iure ex voluptatem alias.</p>
+          </div>
+          <div class="col-xl-3 col-sm-12 p-2">
+            <img src="Asset/Images/EVENT 3.jpg" alt="Berita1">
+          </div>
+          <div class="col-xl-3 col-sm-12">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maxime nobis sunt possimus consequuntur aperiam quaerat commodi maiores, sapiente ad quos repudiandae natus excepturi, similique deleniti nostrum ratione quae? Numquam temporibus, dolorum suscipit unde minima molestiae quo odit provident eveniet inventore harum. Harum iure officiis laudantium sunt reprehenderit aliquam voluptatibus odit, suscipit veniam rerum asperiores molestias quae consectetur nemo, provident modi eum non corporis voluptatem magnam pariatur in fuga? Est labore laboriosam recusandae, deleniti quidem minus velit praesentium eos iure. Iusto numquam laborum atque architecto, nesciunt minima obcaecati recusandae facere sed, quam officia minus accusamus distinctio iure ex voluptatem alias.</p>
+          </div>
+          <div class="col-xl-3 col-sm-12 p-2">
+            <img src="Asset/Images/EVENT 4.jpeg" alt="Berita1">
+          </div>
+          <div class="col-xl-3 col-sm-12">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maxime nobis sunt possimus consequuntur aperiam quaerat commodi maiores, sapiente ad quos repudiandae natus excepturi, similique deleniti nostrum ratione quae? Numquam temporibus, dolorum suscipit unde minima molestiae quo odit provident eveniet inventore harum. Harum iure officiis laudantium sunt reprehenderit aliquam voluptatibus odit, suscipit veniam rerum asperiores molestias quae consectetur nemo, provident modi eum non corporis voluptatem magnam pariatur in fuga? Est labore laboriosam recusandae, deleniti quidem minus velit praesentium eos iure. Iusto numquam laborum atque architecto, nesciunt minima obcaecati recusandae facere sed, quam officia minus accusamus distinctio iure ex voluptatem alias.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="main">
+  <div class="container">
+    <div class="section-divider">
+      <span>KEMITRAAN</span>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-sm-3 p-2">
+            <img src="Asset/Images/logo-bps-1.jpg" alt="Berita1">
+          </div>
+          <div class="col-xl-3 col-sm-3 p-2">
+            <img src="Asset/Images/logo-bps-1.jpg" alt="Berita1">
+          </div>
+          <div class="col-xl-3 col-sm-3 p-2">
+            <img src="Asset/Images/logo-bps-1.jpg" alt="Berita1">
+          </div>
+          <div class="col-xl-3 col-sm-3 p-2">
+            <img src="Asset/Images/logo-bps-1.jpg" alt="Berita1">
+          </div>
+          <div class="col-xl-3 col-sm-3 p-2">
+            <img src="Asset/Images/logo-bps-1.jpg" alt="Berita1">
+          </div>
+          <div class="col-xl-3 col-sm-3 p-2">
+            <img src="Asset/Images/logo-bps-1.jpg" alt="Berita1">
+          </div>
+          <div class="col-xl-3 col-sm-3 p-2">
+            <img src="Asset/Images/logo-bps-1.jpg" alt="Berita1">
+          </div>
+          <div class="col-xl-3 col-sm-3 p-2">
+            <img src="Asset/Images/logo-bps-1.jpg" alt="Berita1">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <section style="height:10vh"></section>
 

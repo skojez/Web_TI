@@ -26,3 +26,44 @@
     color: #eee;
     text-decoration: none;
 }
+  
+.contain {
+    margin: 0 auto;
+    max-width: 1400px;
+    width: 100%;
+}
+  
+.item {
+    align-items: center;
+    color: white;
+    display: flex;
+    height: 490px;
+    justify-content: center;
+}
+  
+.section-divider {
+    border-top: 2px solid black;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+  
+.section-divider > span {
+    color: black;
+    font-weight: bold;
+    background: white;
+    display: inline-block;
+    position: relative;
+    padding: 0 17px;
+    top: -25px;
+    font-size: 30px;
+}
+  
+.main img{
+    height: auto;
+    width: 430px;
+}
+  
+.main-text{
+    width: 550px;
+}
