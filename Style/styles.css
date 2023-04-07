@@ -17,4 +17,12 @@
     background-color: #010081;
 }
 
-
+.sosmed a{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    display: inline-flex;
+    align-items: center;
+    color: #eee;
+    text-decoration: none;
+}

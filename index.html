@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
     <link rel="stylesheet" href="/Style/styles.css">
 </head>
+
 <body class ="d-flex flex-column min-vh-100">
   <div class="navigasi sticky-top">
     <nav class="navbar navbar-expand-lg">
@@ -19,8 +20,10 @@
             </a>
 
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" style="background-color: #010081 !important; color:white" type="submit">Search</button>
+              <input class="form-control me-2" type="search" placeholder="Pencarian" aria-label="Search" style="width: 350px; height: 40px;border-radius: 100px; background-color: rgba(0, 0, 141, 0.8); box-shadow: 0 10px 10px rgba(0, 0, 141, 0.2); padding-left: 50px;">
+              <button class="btn" type="submit" style="position: absolute; border: none; color: white; margin: 2px 5px;">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
             </form>
           </div>
     </nav>
@@ -88,15 +91,21 @@
           <!-- Grid row -->
           <div class="row mt-3">
             <!-- Grid column -->
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5">
               <!-- Content -->
-              <h6 class="text-uppercase fw-bold" style="text-align:center">Alamat</h6>
-              <img src="Asset/Images/Petah.png" alt="">
+              <h6 class="text-uppercase fw-bold" style="text-align:center">Denah Lokasi</h6>
               <hr
                   class="mb-4 mt-0 d-inline-block mx-auto"
-                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  style="width: 350px; background-color: #7c4dff; height: 2px"
                   />
-             
+              <div class="mapouter" style="position:relative; text-align:right; height:250px; width:350px;">
+                <div class="gmap_canvas" style="overflow:hidden; background:none!important; height:250px; width:350px;">
+                  <iframe width="350" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=unri&t=&z=18&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                  <a href="https://2yu.co">2yu</a>
+                  <br>
+                  <a href="https://embedgooglemap.2yu.co">html embed google map</a>
+                </div>
+              </div>
             </div>
             <!-- Grid column -->
   
@@ -126,16 +135,17 @@
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
               <!-- Links -->
               <h6 class="text-uppercase fw-bold">Sosial Media</h6>
-              <div class="icons">
-                <a href="https://www.instagram.com/absolute_wreckage/?hl=en"> 
-                    <div class="icons-instagram">
-                    <i class="fa-brands fa-instagram" style="color: rgb(245, 243, 243);"></i>
-                    </div>
-                </a>
-              <div class="icons-twitter">
-                <a href="https://twitter.com/MeesaReza"> 
-                    <i class="fa-brands fa-twitter" style="color: rgb(251, 246, 246);"></i>
-                </a>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <div class="wrapper">
+                <div class="sosmed">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
               </div>
             </div>
             <!-- Grid column -->
@@ -151,9 +161,7 @@
            style="background-color: rgba(0, 0, 0, 0.2)"
            >
      
-        <a class="text-white" style="text-decoration: none;" href=""
-           >@Copyright All Rights Reserved</a
-          >
+        <a class="text-white" style="text-decoration: none;" href="">&copy; Copyright All Rights Reserved</a>
       </div>
       <!-- Copyright -->
     </footer>
