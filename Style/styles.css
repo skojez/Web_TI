@@ -88,7 +88,7 @@
 }
 
 .text-news p{
-    width: 620px;
+    width: auto;
     font-size: 15px;
     text-align: justify;
     padding: 0 5px;
@@ -122,7 +122,7 @@
 }
 
 .text-event p{
-    width: 300px;
+    width: auto;
     font-size: 15px;
     text-align: justify;
     padding: 0 5px;
