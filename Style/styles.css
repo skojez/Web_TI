@@ -202,6 +202,20 @@
 .show {
     display:inline;
 }
+.text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+ }
+.input, select, textarea{
+    color: #f8f4f4;
+}
+
+textarea:focus, .input:focus {
+    color: #f9f2f2;
+}
 
 @media screen and (max-width: 800px) {
     .navigasi{
@@ -224,13 +238,16 @@
     .site-header{
         position: absolute;
         background: #010081;
-        height :80vh;
+        height :auto;
         width: 200px;
         top: 0;
         right: -200px;
         text-align: left;
         z-index: 2;
         border-radius: 0px 0px 0px 50px;
+    }
+    .site-header img{
+        padding-bottom: 20px;
     }
     .site-header .fa-solid{
         display:block;
