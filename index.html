@@ -34,7 +34,7 @@
           <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
           <ul>
             <li><a class="py-2 d-flex d-md-inline-block" href="#">Beranda</a></li>
-            <li><a id="dropbtn" class="test py-2 d-flex d-md-inline-block nav-link dropdown-toggle" href="#" onclick="fungsiDropdown()">Profil</a>
+            <li><a id="dropbtn" class="test py-2 d-flex d-md-inline-block nav-link" href="#" onclick="fungsiDropdown()">Profil V</a>
               <div class="drop" id="dropdown">
                 <ul>
                   <li><a href="#" >Sejarah</a></li>
@@ -133,7 +133,7 @@
             </div>
             <div class="col-xl-6 col-sm-12">
               <div class="container" >
-                <div class="text-news">
+                <div class="text-news wrapper">
                   <h1>Ani Mardhatillah</h1>
                   <h5>12 Oct 2022</h5>
                   <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia minus consectetur hic quo repudiandae delectus deleniti totam. Numquam earum commodi illo qui explicabo doloribus quas vitae necessitatibus inventore odio ea delectus iure, dignissimos, molestiae saepe tempora cupiditate ratione quisquam </p>
@@ -148,7 +148,7 @@
           <div class="row" style="display: flex; flex-wrap: wrap-reverse;">
             <div class="col-xl-6 col-sm-12">
               <div class="container" >
-                <div class="text-news">
+                <div class="text-news2 wrapper">
                   <h1>Ani Mardhatillah</h1>
                   <h5>12 Oct 2022</h5>
                   <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia minus consectetur hic quo repudiandae delectus deleniti totam. Numquam earum commodi illo qui explicabo doloribus quas vitae necessitatibus inventore odio ea delectus iure, dignissimos, molestiae saepe tempora cupiditate ratione quisquam </p>
@@ -267,7 +267,7 @@
     </div>
   </section>
 
-    <section style="height:10vh"></section>
+ 
 
     <!-- Remove the container if you want to extend the Footer to full width. -->
     <!-- Footer -->
@@ -296,15 +296,12 @@
               <!-- Content -->
               <h6 class="text-uppercase fw-bold" style="text-align:center">Denah Lokasi</h6>
               <hr
-                  class="mb-4 mt-0 d-inline-block mx-auto"
-                  style="width: 350px; background-color: #7c4dff; height: 2px"
+                  class="mb-4 mt-0 d-inline-block"
                   />
-              <div class="mapouter" style="position:relative; text-align:right; height:250px; width:350px; display: flex;">
-                <div class="gmap_canvas" style="overflow:hidden; background:none!important; height:250px; width:350px;">
-                  <iframe width="350" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=unri&t=&z=18&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                  <a href="https://2yu.co">2yu</a>
-                  <br>
-                  <a href="https://embedgooglemap.2yu.co">html embed google map</a>
+              <div class="mapouter">
+                <div class="gmap_canvas" style="overflow:hidden; background:none!important; height:250px; width:auto;display:flex;">
+                  <iframe width="350" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=unri&t=&z=18&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"></iframe>
+                  
                 </div>
               </div>
             </div>
@@ -333,7 +330,7 @@
             <!-- Grid column -->
   
             <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <div class="footer col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
               <!-- Links -->
               <h6 class="text-uppercase fw-bold">Sosial Media</h6>
               <hr
@@ -348,6 +345,7 @@
                   <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 </div>
               </div>
+              <img src="Asset/Icon/logo akreditasi.png" alt="">
             </div>
             <!-- Grid column -->
           </div>

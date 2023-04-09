@@ -89,6 +89,12 @@ html,body
     margin: 2px 5px;
 }
 
+.text-news{
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-left: -20px;
+}
+
 .text-news h5{
     font-size: 15px;
     color: gray;
@@ -109,6 +115,46 @@ html,body
     border: none;
     width: 120px;
     height: 30px;
+}
+
+.text-news h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: start;
+    margin: 2px 5px;
+}
+
+.text-news2{
+    margin-left: 50px;
+    padding-top: 40px;
+}
+
+.text-news2 h5{
+    font-size: 15px;
+    color: gray;
+    text-align: start;
+    margin: 2px 5px 10px;
+}
+
+.text-news2 p{
+    width: auto;
+    font-size: 15px;
+    text-align: justify;
+    padding: 0 5px;
+}
+
+.text-news2 button{
+    color: white;
+    background-color: #010081;
+    border: none;
+    width: 120px;
+    height: 30px;
+}
+.text-news2 h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: start;
+    margin: 2px 5px;
 }
 
 .main-event img{
@@ -225,6 +271,16 @@ html,body
 textarea:focus, .input:focus {
     color: #f9f2f2;
 }
+.footer img{
+    margin-left: -20px;
+    margin-top: 40px;
+}
+.footer hr{
+    width: 100%; background-color: #7c4dff; height: 2px
+}
+.mapouter{
+    position:relative; text-align:right; height:250px; width:auto; display: flex;
+}
 
 @media screen and (max-width: 800px) {
     .navigasi{
@@ -243,6 +299,16 @@ textarea:focus, .input:focus {
         text-decoration: underline;
         color: white;
 
+    }
+    .text-news{
+        margin-left:-10px;
+        padding-bottom: 20px;
+        margin-right: 10px;
+    }
+    .text-news2{
+        margin-left:-10px;
+        padding-bottom: 20px;
+        margin-right: 10px;
     }
     .site-header{
         position: absolute;
@@ -308,6 +374,27 @@ textarea:focus, .input:focus {
     }
     .test{
         transition: 1s;
+    }
+    .fa-magnifying-glass{
+        display: none;
+    }
+    .sosmed{
+        margin-left:20px;
+    }
+    .footer img{
+        margin-left:2px
+    }
+    .gmap_canvas{
+        justify-content: center;
+        margin-left:177px ;
+    }
+    .footer hr{
+        width: 50%;
+    }
+    .mapouter{
+       position:relative;
+       justify-content: center;
+       margin-right:170px;
     }
 }
 
