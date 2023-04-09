@@ -33,29 +33,30 @@
         <div class="container" >
           <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
           <ul>
-          <li><a class="py-2 d-flex d-md-inline-block" href="#">Beranda</a></li>
-          <li><a id="dropbtn" class="test py-2 d-flex d-md-inline-block" href="#" onclick="fungsiDropdown()">
-            Profil
-          </a>
-          <div class="drop" id="dropdown">
-            <ul>
-              <li><a class="" href="#" >Sejarah</a></li>
-              <li><a class="" href="#" >Visi dan Misi</a></li>
-              <li><a class="" href="#" >Tujuan dan Sasaran</a></li>
-              <li><a class="" href="#" >Strategi</a></li>
-              <li><a class="" href="#" >Struktur Organisasi</a></li>
-          </div></li>
-          <li><a class="py-2 d-flex d-md-inline-block" href="#">Sertifikasi</a></li>
-          <li><a class="py-2 d-flex d-md-inline-block" href="#" >Akademik</a></li>
-          <li><a class="py-2 d-flex d-md-inline-block" href="#" >Media</a></li>
-          <li><a class="py-2 d-flex d-md-inline-block" href="#" >Kontak</a></li>
-        </ul>
-        <img src="Asset/Icon/mobileikon.png" alt="">
+            <li><a class="py-2 d-flex d-md-inline-block" href="#">Beranda</a></li>
+            <li><a id="dropbtn" class="test py-2 d-flex d-md-inline-block nav-link dropdown-toggle" href="#" onclick="fungsiDropdown()">Profil</a>
+              <div class="drop" id="dropdown">
+                <ul>
+                  <li><a href="#" >Sejarah</a></li>
+                  <li><a href="#" >Visi dan Misi</a></li>
+                  <li><a href="#" >Tujuan dan Sasaran</a></li>
+                  <li><a href="#" >Strategi</a></li>
+                  <li><a href="#" >Struktur Organisasi</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a class="py-2 d-flex d-md-inline-block" href="#">Sertifikasi</a></li>
+            <li><a class="py-2 d-flex d-md-inline-block" href="#" >Akademik</a></li>
+            <li><a class="py-2 d-flex d-md-inline-block" href="#" >Media</a></li>
+            <li><a class="py-2 d-flex d-md-inline-block" href="#" >Kontak</a></li>
+          </ul>
+        <img src="Asset/Icon/mobileikon.png" alt="logo">
         </div>  
     </nav>
     <i class="fa-solid fa-bars" onclick = "showMenu()"></i>
     <i class="fa-brands fa-searchengin"></i>
   </div>
+  
   <div class="contain">
     <div id="owl-carousel" class="owl-carousel owl-theme">
       <div class="item">
@@ -75,13 +76,14 @@
       </div>
     </div>
   </div>
+  
   <script>
     var navbar = document.getElementById("myNavbar");
     function showMenu(){
       navbar.style.right = "0";
     }
     function hideMenu(){
-      navbar.style.right = "-200px";
+      navbar.style.right = "-400px";
     }
   </script>
   <script>
@@ -102,6 +104,7 @@
       }
     }
   </script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <!-- Owl Carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -139,7 +142,6 @@
               </div>
             </div>
 
-            
             <div class="col-xl-6 col-sm-12">
               <div class="text-news">
                 <h1 style="text-align: end; padding-top: 35px;">Ani Mardhatillah</h1>
