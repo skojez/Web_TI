@@ -14,15 +14,14 @@
 
 <body class ="d-flex flex-column min-vh-100">
   <div class="navigasi sticky-top">
+    
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" style="font-weight: bold; font-size: 20px;">
                 <img src="Asset/Images/Gambar Logo Unri.png" alt="Logo" width="200" height="60" class="d-inline-block align-text-top">
-                
             </a>
-
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Pencarian" aria-label="Search" style="width: 350px; height: 40px;border-radius: 100px; background-color: rgba(0, 0, 141, 0.8); box-shadow: 0 10px 10px rgba(0, 0, 141, 0.2); padding-left: 50px;">
+            <form class="search-bar d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Pencarian" aria-label="Search" style="width: 90%; height: 40px;border-radius: 100px; background-color: rgba(0, 0, 141, 0.8); box-shadow: 0 10px 10px rgba(0, 0, 141, 0.2); padding-left: 50px; white-space:nowrap">
               <button class="btn" type="submit" style="position: absolute; border: none; color: white; margin: 2px 5px;">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
@@ -30,18 +29,33 @@
           </div>
     </nav>
 
-    <nav class="site-header py-1 shadow p-3 mb-5" style="color: black; content: none;">
-        <div class="container d-flex flex-column flex-md-row justify-content-between" >
-          <a class="py-2 d-none d-md-inline-block" href="#" style="text-decoration: none; color: black;">Beranda</a>
-          <a class="py-2 d-none d-md-inline-block" href="#" style="text-decoration: none; color: black;">Profil</a>
-          <a class="py-2 d-none d-md-inline-block" href="#" style="text-decoration: none; color: black;">Sertifikasi</a>
-          <a class="py-2 d-none d-md-inline-block" href="#" style="text-decoration: none; color: black;">Akademik</a>
-          <a class="py-2 d-none d-md-inline-block" href="#" style="text-decoration: none; color: black;">Media</a>
-          <a class="py-2 d-none d-md-inline-block" href="#" style="text-decoration: none; color: black;">Kontak</a>
-        </div>
+    <nav class="site-header shadow mb-5" style="color: black; content: none;" id="myNavbar">
+        <div class="container" >
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+          <li><a class="py-2 d-flex d-md-inline-block" href="#">Beranda</a></li>
+          <li><a id="dropbtn" class="test py-2 d-flex d-md-inline-block" href="#" onclick="fungsiDropdown()">
+            Profil
+          </a>
+          <div class="drop" id="dropdown">
+            <ul>
+              <li><a class="" href="#" >Sejarah</a></li>
+              <li><a class="" href="#" >Visi dan Misi</a></li>
+              <li><a class="" href="#" >Tujuan dan Sasaran</a></li>
+              <li><a class="" href="#" >Strategi</a></li>
+              <li><a class="" href="#" >Struktur Organisasi</a></li>
+          </div></li>
+          <li><a class="py-2 d-flex d-md-inline-block" href="#">Sertifikasi</a></li>
+          <li><a class="py-2 d-flex d-md-inline-block" href="#" >Akademik</a></li>
+          <li><a class="py-2 d-flex d-md-inline-block" href="#" >Media</a></li>
+          <li><a class="py-2 d-flex d-md-inline-block" href="#" >Kontak</a></li>
+        </ul>
+        <img src="Asset/Icon/mobileikon.png" alt="">
+        </div>  
     </nav>
+    <i class="fa-solid fa-bars" onclick = "showMenu()"></i>
+    <i class="fa-brands fa-searchengin"></i>
   </div>
-    
   <div class="contain">
     <div id="owl-carousel" class="owl-carousel owl-theme">
       <div class="item">
@@ -61,7 +75,33 @@
       </div>
     </div>
   </div>
-  
+  <script>
+    var navbar = document.getElementById("myNavbar");
+    function showMenu(){
+      navbar.style.right = "0";
+    }
+    function hideMenu(){
+      navbar.style.right = "-200px";
+    }
+  </script>
+  <script>
+    function fungsiDropdown() {
+      document.getElementById("dropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+      if (!event.target.matches('.test')) {
+        var dropdowns = document.getElementsByClassName("drop");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <!-- Owl Carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
