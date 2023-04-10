@@ -7,11 +7,11 @@
 
 html,body
 {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     margin: 0px;
     padding: 0px;
-    /* overflow-x: hidden;  */
+    overflow-x: hidden; 
 }
 
 .fa-searchengin{
@@ -55,7 +55,7 @@ html,body
     align-items: center;
     color: white;
     display: flex;
-    height: 490px;
+    height: auto;
     justify-content: center;
 }
   
@@ -250,6 +250,7 @@ html,body
     display: none;
 }
 
+
 /* .drop2{
     position: absolute;
     display: none;
@@ -291,15 +292,35 @@ textarea:focus, .input:focus {
 .mapouter{
     position:relative; text-align:right; height:250px; width:auto; display: flex;
 }
+.input::placeholder{
+    color: white;
+    opacity: 1;
+}
+.footer{
+    padding-top:5px;
+}
+.gmap_canvas{
+    overflow:hidden; background:none!important; height:250px; width:auto;display:flex;
+}
 
 @media screen and (max-width: 800px) {
     .navigasi{
         box-shadow: 0px 5px  5px rgba(0, 0, 0, 0.19);
     }
     .item img{
-        height: 400px;
+        min-height: 200px;
         width: 100%;
         margin-left:-0.2%;
+    }
+    .main-news{
+        margin-top:-100px;
+    }
+    .contain{
+        margin: 0px 0 100px 0 ;
+        
+    }
+    .owl-dots{
+        margin-top:0;
     }
     .site-header ul li {
         display : block;
@@ -326,7 +347,7 @@ textarea:focus, .input:focus {
         height :auto;
         width: 200px;
         top: 0;
-        right: -200px;
+        right: -400px;
         text-align: left;
         z-index: 2;
         border-radius: 0px 0px 0px 50px;
@@ -395,16 +416,18 @@ textarea:focus, .input:focus {
         margin-left:2px
     }
     .gmap_canvas{
-        justify-content: center;
-        margin-left:177px ;
+        height:250px; width:auto;display:flex;
     }
     .footer hr{
         width: 50%;
     }
     .mapouter{
        position:relative;
+       align-items: center;
+       align-content: center;
        justify-content: center;
        margin-right:170px;
+       min-width: 600px;
     }
 }
 
