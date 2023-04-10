@@ -11,7 +11,7 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    /* overflow-x: hidden;  */
 }
 
 .fa-searchengin{
@@ -212,12 +212,22 @@ html,body
     text-decoration: none;
     justify-content: space-between;
 }
+.site-header ul li:last-child{
+    position: relative;
+    list-style: none;
+    display: inline;
+    text-decoration: none;
+    justify-content: space-between;
+}
 .container{
     max-width: 100%;
 }
 
 .site-header ul li a{
     width: 18.2%;
+}
+.site-header .rusuh{
+    width: 0;
 }
 
 .fa-bars{
