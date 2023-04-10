@@ -192,10 +192,9 @@ html,body
 }
 
 .main-mitra img{
-    width: 200px;
-    height: 200px;
-    border: solid;
-    border-radius: 50%;
+    width: auto;
+    height: auto;
+    margin: 40px -20px;
 }
 .site-header{
     width: 100%;
@@ -250,21 +249,6 @@ html,body
     display: none;
 }
 
-
-/* .drop2{
-    position: absolute;
-    display: none;
-    font-size: 12px;
-    width: 100%;
-    height: 20vh;
-    border-radius: 10px 10px 10px 10px;
-    padding-top: 10px;
-    background-color: #010081;
-    font-size: medium;
-    text-align: left;
-    top : 35px;
-    left: -32px;
-} */
 .show {
     display:inline;
 }
@@ -287,7 +271,9 @@ textarea:focus, .input:focus {
     margin-top: 40px;
 }
 .footer hr{
-    width: 100%; background-color: #7c4dff; height: 2px
+    width: 100%;
+    background-color: #7c4dff;
+    height: 2px
 }
 .mapouter{
     position:relative; text-align:right; height:250px; width:auto; display: flex;
@@ -416,18 +402,12 @@ textarea:focus, .input:focus {
         margin-left:2px
     }
     .gmap_canvas{
-        height:250px; width:auto;display:flex;
+        height:250px;
+        width:auto;
+        display:flex;
     }
     .footer hr{
         width: 50%;
-    }
-    .mapouter{
-       position:relative;
-       align-items: center;
-       align-content: center;
-       justify-content: center;
-       margin-right:170px;
-       min-width: 600px;
     }
 }
 
@@ -460,4 +440,5 @@ textarea:focus, .input:focus {
     .test{
         transition: 1s;
     }
+    
 }
